@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="MIDNIGHT BLUES — 6장의 슬라이드로 만나는 블루스 입문">
+  <title>MIDNIGHT BLUES | Blues 101</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <main class="app" aria-label="MIDNIGHT BLUES 프레젠테이션">
+    <div class="stage" id="stage">
+      <section class="slide cover active" aria-label="1장: MIDNIGHT BLUES" aria-hidden="false">
+        <div class="eyebrow"><span class="dash"></span>AN INTRODUCTION TO BLUES</div>
+        <div class="cover-copy"><h1>MIDNIGHT<br><em>BLUES</em></h1><p>BLUES 101 <span class="middot">·</span> 6 SLIDES</p></div>
+        <img class="hero-art" src="./assets/hero.png" alt="피아노 건반과 블루스 밴드의 흑백 일러스트" draggable="false">
+        <span class="page-no">01 / 06</span>
+      </section>
+      <section class="slide intro" aria-label="2장: 블루스란 무엇인가" aria-hidden="true">
+        <div class="eyebrow"><span class="dash"></span>WHAT IS BLUES</div>
+        <div class="slide-copy"><h2>블루스는 감정을 연주하는 음악</h2><p class="lead">슬픔만이 아니라 위로와 자유도 담습니다.</p></div>
+        <div class="intro-layout"><div class="statements"><p>반복되는 리듬</p><p>목소리처럼 말하는 악기</p><p>한 음에도 담기는 이야기</p></div><div class="divider-vertical"></div><img class="motion-art" src="./assets/blues-motion.gif" alt="블루스 밴드 일러스트 애니메이션"></div>
+        <span class="page-no">02 / 06</span>
+      </section>
+      <section class="slide history" aria-label="3장: 블루스의 역사" aria-hidden="true">
+        <div class="eyebrow"><span class="dash"></span>A SHORT HISTORY</div>
+        <div class="slide-copy"><h2>블루스는 미국 남부에서 시작됐습니다</h2><p class="lead">19세기 말, 아프리카계 미국인의 노래에서 발전했습니다.</p></div>
+        <div class="timeline"><div class="history-item"><b class="year">1900s</b><strong>미국 남부</strong><span>노동요·영가와 전통 음악에서 탄생</span></div><div class="history-item"><b class="year">1920s</b><strong>녹음의 시대</strong><span>블루스 레코드가 널리 퍼짐</span></div><div class="history-item"><b class="year">1940s–50s</b><strong>시카고 블루스</strong><span>전기 기타와 밴드 사운드로 확장</span></div></div>
+        <span class="page-no">03 / 06</span>
+      </section>
+      <section class="slide musical" aria-label="4장: 12마디 블루스" aria-hidden="true">
+        <div class="eyebrow"><span class="dash"></span>THE MUSICAL LANGUAGE</div>
+        <div class="slide-copy"><h2>12마디가 블루스의 기본 뼈대입니다</h2><p class="lead">세 개의 코드만으로도 블루스를 시작할 수 있습니다.</p></div>
+        <div class="chord-grid" id="chordGrid" aria-label="12마디 블루스 코드 진행">
+          <button data-chord="I" aria-label="1마디 I 코드">I</button><button data-chord="I" aria-label="2마디 I 코드">I</button><button data-chord="I" aria-label="3마디 I 코드">I</button><button data-chord="I" aria-label="4마디 I 코드">I</button>
+          <button data-chord="IV" aria-label="5마디 IV 코드">IV</button><button data-chord="IV" aria-label="6마디 IV 코드">IV</button><button data-chord="I" aria-label="7마디 I 코드">I</button><button data-chord="I" aria-label="8마디 I 코드">I</button>
+          <button data-chord="V" class="accent" aria-label="9마디 V 코드">V</button><button data-chord="IV" aria-label="10마디 IV 코드">IV</button><button data-chord="I" aria-label="11마디 I 코드">I</button><button data-chord="V" class="accent" aria-label="12마디 V 코드">V</button>
+        </div>
+        <div class="chord-footer"><span>C 블루스 예시　C7 · F7 · G7</span><button id="playProgression" class="inline-action" type="button" aria-pressed="false"><span class="play-symbol">▶</span> 코드 진행 보기</button></div>
+        <span class="page-no">04 / 06</span>
+      </section>
+      <section class="slide band" aria-label="5장: 블루스 밴드" aria-hidden="true">
+        <div class="eyebrow"><span class="dash"></span>THE BAND</div>
+        <div class="slide-copy"><h2>블루스 밴드는 서로 대화합니다</h2><p class="lead">리듬 섹션 위로 노래와 솔로가 오갑니다.</p></div>
+        <div class="band-list"><div><strong>보컬</strong><span>이야기와 감정</span></div><div><strong>기타 · 하모니카</strong><span>멜로디와 응답</span></div><div><strong>베이스 · 드럼</strong><span>그루브와 박자</span></div><div><strong>피아노 · 키보드</strong><span>코드와 분위기</span></div></div>
+        <img class="band-art" src="./assets/band.png" alt="보컬, 피아노, 베이스, 관악기, 드럼이 함께하는 밴드 일러스트" draggable="false">
+        <span class="page-no">05 / 06</span>
+      </section>
+      <section class="slide legends" aria-label="6장: 대표 블루스 음악가" aria-hidden="true">
+        <div class="eyebrow"><span class="dash"></span>LEGENDS TO KNOW</div>
+        <div class="slide-copy"><h2>이 네 명부터 들어보세요</h2><p class="lead">시대마다 다른 블루스의 목소리를 만날 수 있습니다.</p></div>
+        <div class="artist-grid"><article><h3>ROBERT JOHNSON</h3><p>델타 블루스의 전설</p><cite>♪ Cross Road Blues</cite></article><article><h3>MUDDY WATERS</h3><p>시카고 일렉트릭 블루스</p><cite>♪ Hoochie Coochie Man</cite></article><article><h3>B.B. KING</h3><p>노래하듯 울리는 기타</p><cite>♪ The Thrill Is Gone</cite></article><article><h3>ETTA JAMES</h3><p>소울풀한 블루스 보컬</p><cite>♪ I’d Rather Go Blind</cite></article></div>
+        <span class="outro">LISTEN · FEEL · PLAY</span><span class="page-no">06 / 06</span>
+      </section>
+    </div>
+    <nav class="controls" aria-label="슬라이드 이동">
+      <span class="brand">MIDNIGHT <b>BLUES</b></span>
+      <div class="navigation"><button id="prev" title="이전 슬라이드" aria-label="이전 슬라이드">←</button><div id="dots" class="dots" aria-label="슬라이드 선택"></div><button id="next" title="다음 슬라이드" aria-label="다음 슬라이드">→</button></div>
+      <div class="utilities"><span id="counter">01 — 06</span><button id="fullscreen" title="전체 화면" aria-label="전체 화면 전환"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div>
+    </nav>
+    <p class="hint">← → 키로 이동 · F 키로 전체 화면 · 모바일에서는 좌우로 스와이프</p>
+  </main>
+</body>
+</html>
