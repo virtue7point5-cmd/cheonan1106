@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>민원처리 현황 시각화 개선 | 의사결정 요약</title>
+<style>
+:root{--ink:#17283d;--muted:#64748b;--line:#dfe6ed;--navy:#183b60;--blue:#eaf3fb;--light:#f7f9fc;--orange:#fff4e5;--orangeink:#87531b;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:#edf1f5;color:var(--ink);font-family:'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;line-height:1.45}
+.page{width:min(1150px,calc(100% - 32px));margin:28px auto;background:#fff;padding:38px 43px 32px;border-radius:16px;box-shadow:0 12px 40px #20354e12}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;border-bottom:2px solid var(--navy);padding-bottom:20px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.11em;color:#34648d}.top h1{font-size:27px;letter-spacing:-.055em;margin:6px 0 7px}.sub{font-size:13px;color:var(--muted);margin:0}.tag{border:1px solid #d2dee8;background:#f4f8fc;border-radius:30px;padding:7px 12px;font-size:12px;white-space:nowrap;color:#3b5973;font-weight:700}
+.hero{margin-top:23px;background:#183b60;color:white;padding:20px 24px;border-radius:12px;display:grid;grid-template-columns:140px 1fr;align-items:center;gap:18px}.hero .lbl{font-size:14px;font-weight:800;color:#bcd7ef}.hero .statement{font-weight:800;font-size:20px;line-height:1.43;letter-spacing:-.04em}.hero .note{font-size:12px;color:#c9ddef;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:17px}.panel{border:1px solid var(--line);border-radius:12px;padding:20px 21px;min-width:0}.panel h2{font-size:16px;margin:0 0 14px;letter-spacing:-.025em;display:flex;align-items:center;gap:9px}.num{background:#e5eff8;color:#1a4c77;font-size:12px;padding:4px 7px;border-radius:6px}.list{padding:0;margin:0;list-style:none;display:grid;gap:10px}.list li{display:grid;grid-template-columns:7px 1fr;gap:10px;font-size:14px}.list li:before{content:'';background:#2c699b;width:6px;height:6px;border-radius:50%;margin-top:8px}.list strong{color:#203f5e}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.issue{background:var(--light);border-radius:8px;padding:13px 12px;min-height:103px}.issue strong{font-size:13px;display:block;margin-bottom:5px;color:#1c4f77}.issue span{font-size:12.5px;color:#48596c}
+.work{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.work-item{background:#f3f7fb;border:1px solid #e2eaf2;border-radius:8px;padding:14px}.work-item b{font-size:14px;display:block;margin-bottom:3px}.work-item p{margin:0;color:#526579;font-size:12.5px}
+.decision{background:#f7f9fc;border-color:#b8cbdc}.decision .list li:before{background:#d58626}.decision .list{gap:11px}.decision .list li{font-size:13.5px}
+.bottom{margin-top:16px;border:1px solid #ebd5ae;background:#fffaf1;border-radius:12px;padding:17px 21px}.bottom h2{font-size:15px;margin:0 0 9px;color:#7b4c17}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{font-size:12px;border:1px solid #ead6b7;color:#80561f;border-radius:6px;background:#fff;padding:6px 10px}.foot{display:flex;gap:14px;justify-content:space-between;margin-top:18px;padding-top:13px;border-top:1px solid var(--line);font-size:11px;color:#718196}.foot b{color:#475f73}
+@media(max-width:760px){.page{padding:24px 18px;margin:12px auto;width:calc(100% - 18px)}.top{display:block}.tag{display:inline-block;margin-top:12px}.top h1{font-size:22px}.hero{grid-template-columns:1fr;gap:5px}.hero .statement{font-size:18px}.grid{grid-template-columns:1fr}.trio{grid-template-columns:1fr}.issue{min-height:unset}.foot{display:block}}
+@page{size:A4 landscape;margin:9mm} @media print{body{background:white;-webkit-print-color-adjust:exact;print-color-adjust:exact}.page{box-shadow:none;margin:0;width:100%;padding:0;border-radius:0}.top{padding-bottom:12px}.top h1{font-size:22px}.hero{padding:15px 18px;margin-top:14px}.hero .statement{font-size:17px}.grid{gap:10px;margin-top:10px}.panel{padding:13px 15px}.panel h2{font-size:14px;margin-bottom:9px}.list{gap:7px}.list li{font-size:11px}.trio{gap:6px}.issue{min-height:75px;padding:9px}.issue span,.work-item p{font-size:10.5px}.work{gap:6px}.work-item{padding:9px}.work-item b{font-size:12px}.bottom{padding:10px 15px;margin-top:10px}.bottom h2{margin-bottom:6px}.chip{font-size:10px;padding:4px 7px}.foot{margin-top:10px;padding-top:8px;font-size:9px}}
+</style>
+</head>
+<body>
+<main class="page" aria-label="민원처리 현황 시각화 개선 1페이지 의사결정 요약">
+ <header class="top"><div><div class="eyebrow">DECISION BRIEF · 내부 검토용</div><h1>민원처리 현황 시각화 개선</h1><p class="sub">수작업 취합과 기준 불일치를 줄이고, 주요 민원 현황을 한눈에 확인하기 위한 개선안</p></div><span class="tag">기획 단계 · 확정 전</span></header>
+ <section class="hero"><div class="lbl">왜 필요한가</div><div><div class="statement">월말 수작업 보고에서 공통 기준 기반의 현황 관리로 전환 필요</div><div class="note">부서별 수치 재확인을 줄이고 긴급·장기 미처리 민원 파악을 지원</div></div></section>
+ <div class="grid">
+  <section class="panel"><h2><span class="num">01</span> 현재 문제는 무엇인가</h2><div class="trio"><div class="issue"><strong>자료 취합</strong><span>여러 파일의 수치를 수작업으로 복사</span></div><div class="issue"><strong>집계 기준</strong><span>부서별 기준 차이로 재확인 반복</span></div><div class="issue"><strong>현황 파악</strong><span>긴급·장기 미처리 건 식별 어려움</span></div></div></section>
+  <section class="panel"><h2><span class="num">02</span> 무엇을 추진하려는가</h2><div class="work"><div class="work-item"><b>공통 입력 양식</b><p>부서별 입력 형식 표준화</p></div><div class="work-item"><b>KPI 자동 계산</b><p>기본 처리 지표 자동 산출</p></div><div class="work-item"><b>조건별 필터</b><p>부서·상태·긴급도별 조회</p></div><div class="work-item"><b>월별 추이 차트</b><p>처리 현황 변화 시각화</p></div></div></section>
+  <section class="panel decision"><h2><span class="num">03</span> 어떤 결정이 필요한가</h2><ul class="list"><li><span><strong>추진 범위</strong> — 4개 개선 기능의 적용 범위</span></li><li><span><strong>추진 주체</strong> — 담당 부서 및 운영 책임자 지정</span></li><li><span><strong>일정·예산</strong> — 구축 일정과 필요 자원 검토</span></li><li><span><strong>운영 기준</strong> — 집계 기준·KPI 산식 확정</span></li></ul></section>
+  <section class="panel"><h2><span class="num">04</span> 추진 시 반드시 지킬 조건</h2><ul class="list"><li><span><strong>개인정보</strong> — 실제 개인정보는 대시보드에 표시하지 않음</span></li><li><span><strong>시스템 변경</strong> — 기존 시스템 변경은 별도 검토</span></li><li><span><strong>효과 검증</strong> — 절감 시간과 성과 수치는 확정하지 않음</span></li></ul></section>
+ </div>
+ <section class="bottom"><h2>05 · 추가로 확인해야 할 사항 <span style="font-weight:normal;font-size:12px">— 모두 미확정</span></h2><div class="chips"><span class="chip">구축 일정</span><span class="chip">예산</span><span class="chip">담당 부서</span><span class="chip">운영 책임자</span><span class="chip">공통 입력 항목</span><span class="chip">KPI 세부 산식</span><span class="chip">민원 분류 기준</span><span class="chip">시스템 연계·변경 여부</span><span class="chip">정량적 성과 기준</span></div></section>
+ <footer class="foot"><span><b>자료 근거</b> 기획 메모 「민원처리 현황 시각화 개선」 및 내부 검토용 추진계획(안)</span><span>※ 기능은 추진 아이디어이며, 예산·일정·성과 수치는 임의 산정하지 않음</span></footer>
+</main>
+</body>
+</html>
