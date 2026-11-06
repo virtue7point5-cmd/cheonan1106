@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0c1423" />
+  <meta name="description" content="정책을 기획하고, 방향을 설계하며, 실행을 연결하는 기획 실무자 포트폴리오" />
+  <title>Portfolio | Policy & Planning</title>
+  <style>
+    :root{--navy:#0c1423;--navy2:#121d30;--slate:#1b293c;--line:rgba(206,218,234,.13);--white:#f3f6fa;--muted:#9daabd;--accent:#ffbd4a;--accent2:#ff8c42;--radius:22px;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--white);font-family:Pretendard,"Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7;word-break:keep-all}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--accent);color:var(--navy)}
+    .shell{max-width:var(--max);padding:0 36px;margin:0 auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(12,20,35,.87);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.top-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:inline-flex;align-items:center;gap:12px;font-weight:850;font-size:17px;letter-spacing:.01em}.brand-logo{display:grid;place-items:center;width:34px;height:34px;background:var(--accent);color:#151b25;border-radius:10px;font-size:16px;font-weight:900}.brand small{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.16em}.nav{display:flex;gap:30px;align-items:center}.nav a{font-size:13px;color:#b5c0cf;font-weight:650;transition:color .2s}.nav a:hover,.nav a:focus-visible{color:var(--accent)}.nav .nav-cta{background:rgba(255,189,74,.1);border:1px solid rgba(255,189,74,.35);color:var(--accent);padding:9px 16px;border-radius:100px}
+    .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse 46% 65% at 90% 23%,rgba(255,180,72,.11),transparent 75%),radial-gradient(ellipse 65% 80% at 65% 75%,rgba(76,109,153,.13),transparent 80%)}.hero-grid{min-height:650px;padding-top:110px;padding-bottom:110px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:50px}.eyebrow{display:flex;align-items:center;gap:12px;color:var(--accent);font-size:12px;letter-spacing:.22em;font-weight:800}.eyebrow:before{content:"";width:28px;height:2px;background:var(--accent)}h1,h2,h3,p{margin-top:0}.hero h1{margin:25px 0 25px;font-size:clamp(40px,5vw,66px);letter-spacing:-.065em;line-height:1.24;font-weight:850}.hero h1 span{color:var(--accent)}.hero-sub{font-size:16px;max-width:555px;color:#b6c3d3;line-height:2}.hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:38px}.btn{cursor:pointer;border:1px solid transparent;border-radius:12px;padding:13px 22px;display:inline-flex;align-items:center;justify-content:center;gap:12px;font-size:13px;font-weight:800;transition:transform .2s,background .2s,border-color .2s,box-shadow .2s}.btn:hover{transform:translateY(-3px)}.btn:active,.page-link:active{transform:scale(.97)}.btn-primary{background:var(--accent);color:#101825;box-shadow:0 12px 32px rgba(255,180,72,.13)}.btn-primary:hover{background:#ffd07c;box-shadow:0 14px 36px rgba(255,180,72,.21)}.btn-outline{border-color:#465366;color:#f1f4f8;background:rgba(255,255,255,.025)}.btn-outline:hover{border-color:var(--accent)}.hero-panel{position:relative;padding:28px;border:1px solid rgba(211,221,233,.16);border-radius:28px;background:linear-gradient(145deg,rgba(37,52,73,.8),rgba(18,29,48,.56));box-shadow:0 35px 90px rgba(0,0,0,.16)}.hero-panel:after{position:absolute;content:"";width:95px;height:95px;right:-12px;top:-12px;border-right:2px solid var(--accent);border-top:2px solid var(--accent);border-radius:0 28px 0 0;opacity:.8;pointer-events:none}.panel-top{display:flex;align-items:center;justify-content:space-between;color:#a2b0c1;font-size:12px;letter-spacing:.12em}.status{display:flex;align-items:center;gap:8px;color:#e0e9f3;letter-spacing:0}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(255,189,74,.1)}.orb{height:215px;display:grid;place-items:center}.orb-circle{position:relative;width:178px;height:178px;border-radius:50%;border:1px solid rgba(255,189,74,.42);display:grid;place-items:center;background:radial-gradient(circle,rgba(255,189,74,.1),transparent 70%)}.orb-circle:before,.orb-circle:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.1);border-radius:50%;inset:-16px}.orb-circle:after{inset:18px;border-style:dashed;border-color:rgba(255,189,74,.26)}.orb-text{text-align:center;font-weight:900;font-size:29px;line-height:1.12;letter-spacing:-.04em}.orb-text small{display:block;margin-top:13px;font-size:10px;letter-spacing:.24em;color:var(--accent)}.panel-bottom{border-top:1px solid var(--line);padding-top:22px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}.panel-bottom div{border-right:1px solid var(--line);text-align:center}.panel-bottom div:last-child{border:0}.panel-bottom strong{font-size:14px;display:block}.panel-bottom small{display:block;color:var(--muted);font-size:11px;margin-top:4px}
+    section.content-section{padding:104px 0}.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:35px}.kicker{color:var(--accent);font-weight:850;font-size:12px;letter-spacing:.19em;margin-bottom:13px}.section-title{font-size:clamp(28px,3.2vw,40px);line-height:1.35;letter-spacing:-.045em;margin-bottom:0}.section-desc{max-width:400px;font-size:13px;color:var(--muted);margin-bottom:5px;line-height:1.9}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.about-card,.role-card,.link-section{border:1px solid var(--line);background:#121d2d;border-radius:var(--radius)}.about-card{padding:35px 36px}.about-card h3{font-size:21px;line-height:1.5;letter-spacing:-.04em;margin-bottom:20px}.about-card p{color:#aebbcc;font-size:14px;line-height:2;margin:0}.about-card.emphasis{background:linear-gradient(130deg,#223044,#182637)}.highlight{color:var(--accent)}.chip-wrap{margin-top:25px;display:flex;flex-wrap:wrap;gap:9px}.chip{font-size:12px;color:#dce5ef;padding:6px 13px;border:1px solid #405066;border-radius:100px;background:rgba(255,255,255,.025)}
+    .roles{background:#0f1929;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.role-card{padding:30px;position:relative;min-height:275px;transition:transform .2s,border-color .2s,background .2s}.role-card:hover{transform:translateY(-5px);border-color:rgba(255,189,74,.5);background:#18263a}.role-num{color:#66778d;font-size:12px;font-weight:750;letter-spacing:.12em}.role-icon{margin-top:26px;margin-bottom:18px;display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:rgba(255,189,74,.1);color:var(--accent)}.role-icon svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.role-card h3{margin:0 0 12px;font-size:19px;letter-spacing:-.045em}.role-card p{font-size:13px;color:#aab7c9;line-height:1.85;margin:0}
+    .link-section{padding:38px;margin-top:8px;display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center;background:linear-gradient(145deg,#19283c,#121e2d)}.link-section h3{font-size:26px;letter-spacing:-.04em;margin-bottom:14px}.link-section p{color:var(--muted);font-size:13px;margin-bottom:0}.pages{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.page-link{position:relative;min-height:146px;padding:20px;border:1px solid #405068;border-radius:15px;background:rgba(7,16,29,.35);display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s,border-color .2s,background .2s}.page-link:hover{transform:translateY(-5px);border-color:var(--accent);background:rgba(255,189,74,.075)}.page-no{font-size:36px;font-weight:850;line-height:1;letter-spacing:-.05em;color:var(--accent)}.page-bottom{font-size:12px;color:#d6e0eb;display:flex;align-items:center;justify-content:space-between;gap:5px}.page-bottom span{color:var(--accent);font-size:17px}.footer{border-top:1px solid var(--line);padding:32px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;color:#78899e;font-size:12px}.footer strong{color:#c2cfdd}.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s,transform .65s}.reveal.visible{opacity:1;transform:translateY(0)}.scroll-top{position:fixed;right:25px;bottom:25px;width:42px;height:42px;border-radius:13px;border:1px solid #495568;background:#1c2b40;color:var(--accent);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:12}.scroll-top.show{opacity:1;pointer-events:auto}.scroll-top:hover{transform:translateY(-3px)}:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr;min-height:auto;padding-top:85px;padding-bottom:85px;gap:50px}.hero-panel{width:min(100%,540px)}.link-section{grid-template-columns:1fr}.role-card{padding:24px}.section-head{align-items:start;flex-direction:column;gap:14px}.section-desc{max-width:640px}}
+    @media(max-width:640px){.shell{padding:0 20px}.top-inner{height:66px}.brand small{display:none}.nav{gap:15px}.nav a{font-size:12px}.nav a:nth-child(2){display:none}.nav .nav-cta{padding:7px 10px}.hero-grid{padding-top:75px;padding-bottom:75px}.hero h1{font-size:clamp(36px,10vw,50px)}.hero-sub{font-size:14px}.hero-panel{padding:22px}.orb{height:200px}.orb-circle{width:155px;height:155px}.panel-bottom strong{font-size:12px}.panel-bottom small{font-size:10px}section.content-section{padding:75px 0}.about-grid,.role-grid{grid-template-columns:1fr}.about-card{padding:26px}.role-card{min-height:0}.link-section{padding:24px;gap:23px}.link-section h3{font-size:24px}.pages{gap:8px}.page-link{padding:14px;min-height:122px}.page-no{font-size:31px}.page-bottom{font-size:10px}.footer-inner{flex-direction:column;gap:5px}.scroll-top{right:16px;bottom:16px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell top-inner">
+      <!-- 이름이나 브랜드명을 변경하려면 아래의 PORTFOLIO를 수정하세요. -->
+      <a class="brand" href="#home" aria-label="첫 화면으로 이동"><span class="brand-logo">P.</span><span>PORTFOLIO <small>2026</small></span></a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#about">소개</a><a href="#experience">업무 분야</a><a class="nav-cta" href="#projects">프로젝트 보기 ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="shell hero-grid">
+        <div class="reveal">
+          <div class="eyebrow">POLICY · STRATEGY · PLANNING</div>
+          <h1>정책의 방향을 읽고,<br><span>실행의 길을 설계합니까?
+</span></h1>
+          <p class="hero-sub">안녕하세요. 정책기획과 기획 업무, 공약 관련 실무를 중심으로 문제를 구조화하고 실행 가능한 과제로 연결하는 기획 실무자입니다.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#experience">업무 분야 살펴보기 <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#projects">연결 페이지 <span aria-hidden="true">→</span></a></div>
+        </div>
+        <div class="hero-panel reveal" aria-label="업무 역량 소개 카드">
+          <div class="panel-top"><span>WORK PROFILE / 01</span><span class="status"><span class="dot"></span> OPEN TO IDEAS</span></div>
+          <div class="orb"><div class="orb-circle"><div class="orb-text">THINK<br>TO DO<small>FROM PLAN TO ACTION</small></div></div></div>
+          <div class="panel-bottom"><div><strong>POLICY</strong><small>정책기획</small></div><div><strong>PLANNING</strong><small>기획 · 조정</small></div><div><strong>DELIVERY</strong><small>과제 · 실행</small></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section" id="about">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="kicker">01 / ABOUT ME</div><h2 class="section-title">복잡한 과제를 명확한 방향으로.</h2></div><p class="section-desc">현황을 분석하고, 이해관계를 조율하며, 아이디어를 실제 업무 언어로 정리하는 과정에 집중합니다.</p></div>
+        <div class="about-grid">
+          <article class="about-card emphasis reveal"><h3>좋은 기획은 <span class="highlight">명확한 질문</span>에서 시작합니다.</h3><p>왜 필요한지, 어떤 문제를 해결해야 하는지, 실행을 위해 무엇을 결정해야 하는지 살펴봅니다. 현장의 맥락과 정책적 목적을 함께 고려하는 기획을 지향합니다.</p></article>
+          <article class="about-card reveal"><h3>생각을 정리하고, 실행을 연결합니다.</h3><p>정책 검토부터 기획안 구성, 과제 관리와 협업까지. 핵심을 간결하게 전달하고 실무에 활용할 수 있는 결과물로 구체화하는 것을 중요하게 생각합니다.</p><div class="chip-wrap"><span class="chip">정책 분석</span><span class="chip">전략 기획</span><span class="chip">업무 조정</span><span class="chip">공약 관리</span></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="content-section roles" id="experience">
+      <div class="shell"><div class="section-head reveal"><div><div class="kicker">02 / EXPERIENCE & EXPERTISE</div><h2 class="section-title">업무 경험 및 관심 분야</h2></div><p class="section-desc">정책기획과, 기획팀, 공약담당 업무를 세 가지 주요 영역으로 정리했습니다.</p></div>
+        <div class="role-grid">
+          <article class="role-card reveal"><div class="role-num">AREA / 01</div><div class="role-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 17V8l6-4 6 4v9M9 11h6M9 14h6"/></svg></div><h3>정책기획과</h3><p>정책 환경과 주요 현안을 파악하고, 정책 방향과 추진 과제를 체계적으로 정리하는 영역입니다.</p></article>
+          <article class="role-card reveal"><div class="role-num">AREA / 02</div><div class="role-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 9h8M8 13h5M8 17h8"/></svg></div><h3>기획팀</h3><p>계획 수립, 업무 구조화, 자료 작성과 협업 조정을 통해 조직의 목표를 실행 계획으로 연결하는 영역입니다.</p></article>
+          <article class="role-card reveal"><div class="role-num">AREA / 03</div><div class="role-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M6 5v15M6 8h11l-3 4 3 4H6"/></svg></div><h3>공약담당</h3><p>공약별 추진 과제와 이행 현황을 정리하고, 점검 및 보고를 위한 정보를 체계화하는 영역입니다.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="content-section" id="projects">
+      <div class="shell"><div class="section-head reveal"><div><div class="kicker">03 / CONNECTED PAGES</div><h2 class="section-title">더 자세한 이야기는 이곳에서.</h2></div><p class="section-desc">아래 1, 2, 3 버튼은 각각 별도 HTML 페이지로 연결됩니다. 파일을 추가하면 바로 사용할 수 있습니다.</p></div>
+        <div class="link-section reveal"><div><h3>Explore More <span class="highlight">↗</span></h3><p>추후 개별 프로젝트, 주요 성과, 자료 아카이브 등으로 자유롭게 확장할 수 있는 공간입니다.</p></div>
+          <div class="pages"><a class="page-link" href="1.html" aria-label="1번 페이지로 이동"><span class="page-no">1.</span><span class="page-bottom">PAGE 01 <span>↗</span></span></a><a class="page-link" href="2.html" aria-label="2번 페이지로 이동"><span class="page-no">2.</span><span class="page-bottom">PAGE 02 <span>↗</span></span></a><a class="page-link" href="3.html" aria-label="3번 페이지로 이동"><span class="page-no">3.</span><span class="page-bottom">PAGE 03 <span>↗</span></span></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="shell footer-inner"><span><strong>PORTFOLIO</strong> · Policy & Planning</span><span>Thoughtful planning. Meaningful action. © <span id="year">2026</span></span></div></footer>
+  <button class="scroll-top" id="scrollTop" aria-label="맨 위로 이동">↑</button>
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const elements=document.querySelectorAll('.reveal');
+    if('IntersectionObserver' in window){const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:.12});elements.forEach(el=>observer.observe(el));}else{elements.forEach(el=>el.classList.add('visible'));}
+    const scrollBtn=document.getElementById('scrollTop');
+    function updateScroll(){scrollBtn.classList.toggle('show',window.scrollY>450)}
+    window.addEventListener('scroll',updateScroll,{passive:true});updateScroll();
+    scrollBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
+  </script>
+</body>
+</html>
